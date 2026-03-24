@@ -1,0 +1,30 @@
+# StoreByback Configuration
+
+# Maximum number of sell records to keep per player.
+# When the limit is reached, the oldest records are discarded.
+max-history: 15
+
+# Price multiplier applied to the original sale price when buying back.
+# 1.0 = same price sold for, 1.5 = 50% markup, 2.0 = double price.
+price-multiplier: 1.0
+
+# How many hours before a sell record expires and is no longer shown.
+# Set to 0 or less to disable expiry (records persist indefinitely).
+history-expiry-hours: 24
+
+# Whether to record bulk sells (/sell all, /sell inventory).
+# Bulk sells create one record per unique item type in the inventory.
+record-bulk-sells: true
+
+# Whether to record hand/single-item sells (/sell hand).
+record-hand-sells: true
+
+# Messages (MiniMessage format)
+messages:
+  insufficient-funds: "<red>You need <gold>$%price%</gold> to buy that back but only have <gold>$%balance%</gold>.</red>"
+  buyback-success: "<green>Bought back <white>%amount%x %item%</white> for <gold>$%price%</gold>.</green>"
+  inventory-full: "<yellow>Your inventory was full — the item was dropped at your feet.</yellow>"
+  no-history: "<yellow>You have no items to buy back.</yellow>"
+  no-permission: "<red>You don't have permission to use this command.</red>"
+  reload-success: "<green>StoreByback config reloaded.</green>"
+  clear-success: "<green>Sell history cleared for <white>%player%</white>.</green>"

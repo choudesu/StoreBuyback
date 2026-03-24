@@ -1,4 +1,27 @@
 name: StoreByback
-version: '1.0-SNAPSHOT'
+version: '${project.version}'
 main: com.giantslair.storeByback.StoreByback
 api-version: '1.21'
+description: Buy back items you sold via EssentialsX /sell
+authors:
+  - GiantsLair
+
+depend:
+  - Vault
+  - Essentials
+
+commands:
+  buyback:
+    description: Open the buyback GUI to reclaim items you sold
+    usage: /<command> [reload|clear [player]]
+    permission: storebyback.use
+    aliases:
+      - bb
+
+permissions:
+  storebyback.use:
+    description: Allows using /buyback
+    default: true
+  storebyback.admin:
+    description: Allows /buyback reload and /buyback clear [player]
+    default: op

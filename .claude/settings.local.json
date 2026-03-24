@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find C:/Users/Chou/IdeaProjects/StoreByback -name *.java -o -name *.yml -o -name *.xml)",
+      "Bash(find C:/Users/Chou/.m2/repository/net/essentialsx/EssentialsX/2.20.1/ -name *.jar)",
+      "Bash(jar tf:*)",
+      "Bash(jar xf:*)",
+      "Bash(javap -p net/essentialsx/api/v2/events/TransactionEvent.class)",
+      "Bash(rm -rf net/)",
+      "Bash(javap -p net/ess3/api/events/UserBalanceUpdateEvent.class)",
+      "Bash(javap -p \"net/ess3/api/events/UserBalanceUpdateEvent$Cause.class\")"
+    ]
+  }
+}
