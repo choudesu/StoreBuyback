@@ -1,4 +1,4 @@
-package com.giantslair.storeByback;
+package com.giantslair.storeBuyback;
 
 import org.bukkit.inventory.ItemStack;
 

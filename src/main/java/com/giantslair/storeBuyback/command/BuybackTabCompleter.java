@@ -1,4 +1,4 @@
-package com.giantslair.storeByback.command;
+package com.giantslair.storeBuyback.command;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;

@@ -1,4 +1,4 @@
-# StoreByback Configuration
+# StoreBuyback Configuration
 
 # Maximum number of sell records to keep per player.
 # When the limit is reached, the oldest records are discarded.
@@ -26,5 +26,5 @@ messages:
   inventory-full: "<yellow>Your inventory was full — the item was dropped at your feet.</yellow>"
   no-history: "<yellow>You have no items to buy back.</yellow>"
   no-permission: "<red>You don't have permission to use this command.</red>"
-  reload-success: "<green>StoreByback config reloaded.</green>"
+  reload-success: "<green>StoreBuyback config reloaded.</green>"
   clear-success: "<green>Sell history cleared for <white>%player%</white>.</green>"

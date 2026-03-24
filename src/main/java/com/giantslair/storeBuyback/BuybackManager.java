@@ -1,4 +1,4 @@
-package com.giantslair.storeByback;
+package com.giantslair.storeBuyback;
 
 import net.milkbowl.vault.economy.Economy;
 import org.bukkit.inventory.ItemStack;
@@ -26,7 +26,7 @@ public class BuybackManager {
         }
     }
 
-    private final StoreByback plugin;
+    private final StoreBuyback plugin;
     private final BuybackStorage storage;
     private final Economy economy;
 
@@ -39,7 +39,7 @@ public class BuybackManager {
     private boolean recordBulkSells;
     private boolean recordHandSells;
 
-    public BuybackManager(StoreByback plugin, BuybackStorage storage, Economy economy) {
+    public BuybackManager(StoreBuyback plugin, BuybackStorage storage, Economy economy) {
         this.plugin = plugin;
         this.storage = storage;
         this.economy = economy;

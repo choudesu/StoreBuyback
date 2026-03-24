@@ -1,7 +1,7 @@
-package com.giantslair.storeByback.gui;
+package com.giantslair.storeBuyback.gui;
 
-import com.giantslair.storeByback.BuybackManager;
-import com.giantslair.storeByback.SellRecord;
+import com.giantslair.storeBuyback.BuybackManager;
+import com.giantslair.storeBuyback.SellRecord;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextDecoration;

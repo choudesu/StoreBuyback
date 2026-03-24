@@ -1,10 +1,10 @@
-package com.giantslair.storeByback;
+package com.giantslair.storeBuyback;
 
-import com.giantslair.storeByback.command.BuybackCommand;
-import com.giantslair.storeByback.command.BuybackTabCompleter;
-import com.giantslair.storeByback.gui.BuybackGUI;
-import com.giantslair.storeByback.listener.SellPostListener;
-import com.giantslair.storeByback.listener.SellPreListener;
+import com.giantslair.storeBuyback.command.BuybackCommand;
+import com.giantslair.storeBuyback.command.BuybackTabCompleter;
+import com.giantslair.storeBuyback.gui.BuybackGUI;
+import com.giantslair.storeBuyback.listener.SellPostListener;
+import com.giantslair.storeBuyback.listener.SellPreListener;
 import net.ess3.api.IEssentials;
 import net.milkbowl.vault.economy.Economy;
 import org.bukkit.event.EventHandler;
@@ -14,7 +14,7 @@ import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class StoreByback extends JavaPlugin {
+public final class StoreBuyback extends JavaPlugin {
 
     private BuybackManager manager;
 
@@ -26,7 +26,7 @@ public final class StoreByback extends JavaPlugin {
         // Require Vault
         Economy economy = setupEconomy();
         if (economy == null) {
-            getLogger().severe("Vault Economy provider not found — disabling StoreByback.");
+            getLogger().severe("Vault Economy provider not found — disabling StoreBuyback.");
             setEnabled(false);
             return;
         }
@@ -34,7 +34,7 @@ public final class StoreByback extends JavaPlugin {
         // Require EssentialsX
         Plugin essPlugin = getServer().getPluginManager().getPlugin("Essentials");
         if (!(essPlugin instanceof IEssentials essentials)) {
-            getLogger().severe("EssentialsX not found or not enabled — disabling StoreByback.");
+            getLogger().severe("EssentialsX not found or not enabled — disabling StoreBuyback.");
             setEnabled(false);
             return;
         }
@@ -67,7 +67,7 @@ public final class StoreByback extends JavaPlugin {
             buybackCommand.setTabCompleter(tabCompleter);
         }
 
-        getLogger().info("StoreByback enabled successfully.");
+        getLogger().info("StoreBuyback enabled successfully.");
     }
 
     @Override
@@ -75,7 +75,7 @@ public final class StoreByback extends JavaPlugin {
         if (manager != null) {
             manager.shutdown();
         }
-        getLogger().info("StoreByback disabled.");
+        getLogger().info("StoreBuyback disabled.");
     }
 
     private Economy setupEconomy() {

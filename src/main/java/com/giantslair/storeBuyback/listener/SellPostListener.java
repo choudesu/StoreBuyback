@@ -1,7 +1,7 @@
-package com.giantslair.storeByback.listener;
+package com.giantslair.storeBuyback.listener;
 
-import com.giantslair.storeByback.BuybackManager;
-import com.giantslair.storeByback.SellRecord;
+import com.giantslair.storeBuyback.BuybackManager;
+import com.giantslair.storeBuyback.SellRecord;
 import net.ess3.api.events.UserBalanceUpdateEvent;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;

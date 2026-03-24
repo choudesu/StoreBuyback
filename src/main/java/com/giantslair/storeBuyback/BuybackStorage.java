@@ -1,4 +1,4 @@
-package com.giantslair.storeByback;
+package com.giantslair.storeBuyback;
 
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -13,17 +13,17 @@ import java.util.logging.Level;
 
 /**
  * Handles all YAML read/write for per-player sell history.
- * Files are stored at: plugins/StoreByback/playerdata/<uuid>.yml
+ * Files are stored at: plugins/StoreBuyback/playerdata/<uuid>.yml
  *
  * Items are serialized via ItemStack.serializeAsBytes() and stored as Base64
  * strings to fully preserve NBT data (including EliteMobs custom attributes).
  */
 public class BuybackStorage {
 
-    private final StoreByback plugin;
+    private final StoreBuyback plugin;
     private final File playerDataDir;
 
-    public BuybackStorage(StoreByback plugin) {
+    public BuybackStorage(StoreBuyback plugin) {
         this.plugin = plugin;
         this.playerDataDir = new File(plugin.getDataFolder(), "playerdata");
         if (!playerDataDir.exists()) {

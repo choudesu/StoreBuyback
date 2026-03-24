@@ -1,8 +1,8 @@
-package com.giantslair.storeByback.command;
+package com.giantslair.storeBuyback.command;
 
-import com.giantslair.storeByback.BuybackManager;
-import com.giantslair.storeByback.BuybackStorage;
-import com.giantslair.storeByback.gui.BuybackGUI;
+import com.giantslair.storeBuyback.BuybackManager;
+import com.giantslair.storeBuyback.BuybackStorage;
+import com.giantslair.storeBuyback.gui.BuybackGUI;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.NamedTextColor;
 import org.bukkit.Bukkit;
@@ -49,7 +49,7 @@ public class BuybackCommand implements CommandExecutor {
                 return true;
             }
             manager.reloadConfig();
-            sender.sendMessage(Component.text("StoreByback config reloaded.", NamedTextColor.GREEN));
+            sender.sendMessage(Component.text("StoreBuyback config reloaded.", NamedTextColor.GREEN));
             return true;
         }
 

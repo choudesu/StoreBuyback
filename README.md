@@ -1,6 +1,6 @@
-# StoreByback
+# StoreBuyback
 
-[![CI Build](https://github.com/choudesu/StoreByback/actions/workflows/ci.yml/badge.svg)](https://github.com/choudesu/StoreByback/actions/workflows/ci.yml)
+[![CI Build](https://github.com/choudesu/StoreBuyback/actions/workflows/ci.yml/badge.svg)](https://github.com/choudesu/StoreBuyback/actions/workflows/ci.yml)
 
 A Paper plugin that lets players buy back items they sold to the server via EssentialsX `/sell`. Full NBT data is preserved, making it safe for use with EliteMobs and other plugins that use custom item data.
 
@@ -13,9 +13,9 @@ A Paper plugin that lets players buy back items they sold to the server via Esse
 
 ## Installation
 
-1. Drop `StoreByback-<version>.jar` into your `plugins/` folder.
+1. Drop `StoreBuyback-<version>.jar` into your `plugins/` folder.
 2. Ensure Vault and EssentialsX are also installed.
-3. Start the server — a default `config.yml` will be generated under `plugins/StoreByback/`.
+3. Start the server — a default `config.yml` will be generated under `plugins/StoreBuyback/`.
 
 ## Usage
 
@@ -54,7 +54,7 @@ Click any item in the GUI to buy it back at the configured price. Items are show
 
 ## Configuration
 
-`plugins/StoreByback/config.yml`:
+`plugins/StoreBuyback/config.yml`:
 
 ```yaml
 # Max sell records stored per player (oldest are dropped when limit is reached)
@@ -84,4 +84,4 @@ record-hand-sells: true
 
 ## Data Storage
 
-Player sell history is stored in `plugins/StoreByback/playerdata/<uuid>.yml`. Each file contains the serialized items and sale prices for that player. Files are safe to delete manually to clear a player's history (or use `/buyback clear <player>`).
+Player sell history is stored in `plugins/StoreBuyback/playerdata/<uuid>.yml`. Each file contains the serialized items and sale prices for that player. Files are safe to delete manually to clear a player's history (or use `/buyback clear <player>`).

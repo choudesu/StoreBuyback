@@ -1,6 +1,6 @@
-package com.giantslair.storeByback.listener;
+package com.giantslair.storeBuyback.listener;
 
-import com.giantslair.storeByback.BuybackManager;
+import com.giantslair.storeBuyback.BuybackManager;
 import net.ess3.api.IEssentials;
 import net.ess3.api.IUser;
 import org.bukkit.entity.Player;
