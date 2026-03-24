@@ -1,0 +1,4 @@
+name: StoreByback
+version: '1.0-SNAPSHOT'
+main: com.giantslair.storeByback.StoreByback
+api-version: '1.21'
