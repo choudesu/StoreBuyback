@@ -1,0 +1,70 @@
+name: Bug Report
+description: Report a bug or unexpected behaviour
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill in as much detail as possible. The more information you provide, the faster the bug can be fixed.
+
+  - type: input
+    id: plugin-version
+    attributes:
+      label: Plugin Version
+      description: Found in `/plugins` in-game or in the jar filename
+      placeholder: "e.g. 1.0-abc1234 or 1.0.0"
+    validations:
+      required: true
+
+  - type: input
+    id: server-version
+    attributes:
+      label: Server Version
+      description: Output of `/version` in-game
+      placeholder: "e.g. Paper 1.21.1 build 132"
+    validations:
+      required: true
+
+  - type: input
+    id: essentials-version
+    attributes:
+      label: EssentialsX Version
+      description: Seen in `/plugins` or the EssentialsX jar filename
+      placeholder: "e.g. 2.21.0"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the bug clearly
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      placeholder: |
+        1. Sell an item with /sell hand
+        2. Open /buyback
+        3. Click the item
+        4. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behaviour
+      description: What should have happened instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant Log Output
+      description: Paste any errors from the server console. Will be formatted as code automatically.
+      render: text

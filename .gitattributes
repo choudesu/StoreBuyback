@@ -1,0 +1,13 @@
+# Normalize line endings on commit
+* text=auto
+
+*.java  text eol=lf
+*.yml   text eol=lf
+*.yaml  text eol=lf
+*.xml   text eol=lf
+*.md    text eol=lf
+*.sh    text eol=lf
+*.bat   text eol=crlf
+
+*.jar   binary
+*.class binary

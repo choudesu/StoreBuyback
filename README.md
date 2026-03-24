@@ -1,5 +1,7 @@
 # StoreByback
 
+[![CI Build](https://github.com/choudesu/StoreByback/actions/workflows/ci.yml/badge.svg)](https://github.com/choudesu/StoreByback/actions/workflows/ci.yml)
+
 A Paper plugin that lets players buy back items they sold to the server via EssentialsX `/sell`. Full NBT data is preserved, making it safe for use with EliteMobs and other plugins that use custom item data.
 
 ## Requirements
