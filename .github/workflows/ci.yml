@@ -32,7 +32,7 @@ jobs:
         run: mvn clean package -Drevision=${{ env.DEV_VERSION }}
 
       - name: Upload dev build
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: StoreBuyback-dev-${{ env.DEV_VERSION }}
           path: target/StoreBuyback-*.jar
