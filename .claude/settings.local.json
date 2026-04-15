@@ -10,7 +10,8 @@
       "Bash(javap -p net/ess3/api/events/UserBalanceUpdateEvent.class)",
       "Bash(javap -p \"net/ess3/api/events/UserBalanceUpdateEvent$Cause.class\")",
       "Bash(mv src/main/java/com/giantslair/storeByback src/main/java/com/giantslair/storeBuyback)",
-      "Bash(mv src/main/java/com/giantslair/storeBuyback/StoreByback.java src/main/java/com/giantslair/storeBuyback/StoreBuyback.java)"
+      "Bash(mv src/main/java/com/giantslair/storeBuyback/StoreByback.java src/main/java/com/giantslair/storeBuyback/StoreBuyback.java)",
+      "Bash(mvn clean *)"
     ]
   }
 }

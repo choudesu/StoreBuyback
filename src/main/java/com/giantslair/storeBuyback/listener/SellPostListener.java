@@ -125,6 +125,6 @@ public class SellPostListener implements Listener {
         }
 
         // Returns how many are still present (not consumed = still in inventory)
-        return target.getAmount() - found;
+        return found;
     }
 }
